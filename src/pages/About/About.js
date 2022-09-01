@@ -18,7 +18,7 @@ const About = () => {
         </div>
 
         <p>Gostou do Mini <span>Blog</span>? Crie sua conta e participe.</p>
-        <Link to="/register" className='btn'>Cadastre-se</Link>
+        <Link to="/miniblog/register" className='btn'>Cadastre-se</Link>
       </div>
     </div>
   )

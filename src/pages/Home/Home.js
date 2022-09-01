@@ -16,7 +16,7 @@ const Home = () => {
     e.preventDefault();
 
     if(query){
-      return navigate(`/search?q=${query}`);
+      return navigate(`/miniblog/search?q=${query}`);
     }
   }
 
@@ -40,7 +40,7 @@ const Home = () => {
           {posts && posts.length === 0 && (
             <div className={styles.noposts}>
               <p>Ainda não existe nenhum post! :(</p>
-              <Link to="/posts/create" className="btn">Criar post</Link>
+              <Link to="/miniblog/posts/create" className="btn">Criar post</Link>
             </div>
           )}
         </div>

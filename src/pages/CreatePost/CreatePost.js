@@ -48,7 +48,7 @@ const CreatePost = () => {
     })
 
     // Redirect to home
-    navigate("/");
+    navigate("/miniblog/");
   }
 
   return (

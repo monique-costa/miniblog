@@ -14,13 +14,13 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <NavLink to="/" className={styles.brand}>
+      <NavLink to="/miniblog/" className={styles.brand}>
         Mini <span>Blog</span>
       </NavLink>
 
       <ul className={styles.list}>
         <li>
-          <NavLink to="/" className={({isActive}) => (isActive ? styles.active : "")}>
+          <NavLink to="/miniblog/" className={({isActive}) => (isActive ? styles.active : "")}>
             Home
           </NavLink> 
         </li>
@@ -28,12 +28,12 @@ const Navbar = () => {
         {!user && (
           <>
             <li>
-              <NavLink to="/login" className={({isActive}) => (isActive ? styles.active : "")}>
+              <NavLink to="/miniblog/login" className={({isActive}) => (isActive ? styles.active : "")}>
                 Entre
               </NavLink> 
             </li>
             <li>
-              <NavLink to="/register" className={({isActive}) => (isActive ? styles.active : "")}>
+              <NavLink to="/miniblog/register" className={({isActive}) => (isActive ? styles.active : "")}>
                 Cadastre-se
               </NavLink> 
             </li>
@@ -43,12 +43,12 @@ const Navbar = () => {
         {user && (
           <>
             <li>
-              <NavLink to="/posts/create" className={({isActive}) => (isActive ? styles.active : "")}>
+              <NavLink to="/miniblog/posts/create" className={({isActive}) => (isActive ? styles.active : "")}>
                 Criar post
               </NavLink> 
             </li>
             <li>
-              <NavLink to="/dashboard" className={({isActive}) => (isActive ? styles.active : "")}>
+              <NavLink to="/miniblog/dashboard" className={({isActive}) => (isActive ? styles.active : "")}>
                 Dashboard
               </NavLink> 
             </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
         )}
 
         <li>
-          <NavLink to="/about" className={({isActive}) => (isActive ? styles.active : "")}>
+          <NavLink to="/miniblog/about" className={({isActive}) => (isActive ? styles.active : "")}>
             Sobre
           </NavLink> 
         </li>

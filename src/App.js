@@ -53,15 +53,15 @@ function App() {
 
           <div className="container">
             <Routes>
-              <Route path="/" element={ <Home /> } />
-              <Route path="/about" element={ <About /> } />
-              <Route path="/search" element={ <Search /> } />
-              <Route path="/posts/:id" element={ <ShowPost /> } />
-              <Route path="/login" element={ !user ? <Login /> : <Navigate to="/" /> } />
-              <Route path="/register" element={ !user ? <Register /> : <Navigate to="/" /> } />
-              <Route path="/posts/create" element={ user ? <CreatePost /> : <Navigate to="/login" /> } />
-              <Route path="/posts/edit/:id" element={ user ? <EditPost /> : <Navigate to="/login" /> } />
-              <Route path="/dashboard" element={ user ? <Dashboard /> : <Navigate to="/login" /> } />
+              <Route path="/miniblog/" element={ <Home /> } />
+              <Route path="/miniblog/about" element={ <About /> } />
+              <Route path="/miniblog/search" element={ <Search /> } />
+              <Route path="/miniblog/posts/:id" element={ <ShowPost /> } />
+              <Route path="/miniblog/login" element={ !user ? <Login /> : <Navigate to="/miniblog/" /> } />
+              <Route path="/miniblog/register" element={ !user ? <Register /> : <Navigate to="/miniblog/" /> } />
+              <Route path="/miniblog/posts/create" element={ user ? <CreatePost /> : <Navigate to="/miniblog/login" /> } />
+              <Route path="/miniblog/posts/edit/:id" element={ user ? <EditPost /> : <Navigate to="/miniblog/login" /> } />
+              <Route path="/miniblog/dashboard" element={ user ? <Dashboard /> : <Navigate to="/miniblog/login" /> } />
             </Routes>
           </div>
 

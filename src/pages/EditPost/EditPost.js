@@ -67,7 +67,7 @@ const EditPost = () => {
     updateDocument(id, data);
 
     // Redirect to home
-    navigate("/dashboard");
+    navigate("/miniblog/dashboard");
   }
 
   return (

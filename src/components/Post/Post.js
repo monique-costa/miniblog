@@ -13,7 +13,7 @@ const Post = ({post}) => {
                 <p key={tag}><span>#</span>{tag}</p>
             ))}
         </div>
-        <Link to={`/posts/${post.id}`} className='btn btn-outline' >Ler conteúdo</Link>
+        <Link to={`/miniblog/posts/${post.id}`} className='btn btn-outline' >Ler conteúdo</Link>
     </div>
   )
 }

@@ -28,7 +28,7 @@ const Dashboard = () => {
         {posts && posts.length === 0 ? (
           <div className={styles.nopost}>
             <p>Você ainda não tem nenhum post, que tal criar o primeiro?</p>
-            <Link to="/posts/create" className='btn'>Criar post!</Link>
+            <Link to="/miniblog/posts/create" className='btn'>Criar post!</Link>
           </div>
         ) : (
           <>
@@ -41,8 +41,8 @@ const Dashboard = () => {
               <div key={post.id} className={styles.row} >
                 <p>{post.title}</p>
                 <div className={styles.actions}>
-                  <Link to={`/posts/${post.id}`} className="btn btn-outline dash"> Ver </Link>
-                  <Link to={`/posts/edit/${post.id}`} className="btn btn-outline dash"> Editar </Link>
+                  <Link to={`/miniblog/posts/${post.id}`} className="btn btn-outline dash"> Ver </Link>
+                  <Link to={`/miniblog/posts/edit/${post.id}`} className="btn btn-outline dash"> Editar </Link>
                   <button onClick={() => deleteDocument(post.id)} className="btn btn-outline btn-danger dash"> Excluir </button>
                 </div>
               </div>
