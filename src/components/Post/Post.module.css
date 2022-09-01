@@ -1,0 +1,43 @@
+.post {
+    width: 90vw;
+    margin-bottom: 2em;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post h2 {
+    margin: .5em 0;
+}
+
+.post .tags {
+    margin-bottom: 1.2em;
+    display: flex;
+}
+
+.tags p {
+    margin-right: .5em;
+}
+
+.tags span {
+    font-weight: bold;
+}
+
+.createdBy {
+    font-style: italic;
+    color: #444;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+@media all and (min-width: 1000px){
+    .post{
+        width: 100%;
+    }
+
+    .post img {
+        max-width: 600px;
+    }
+}

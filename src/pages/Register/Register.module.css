@@ -1,0 +1,11 @@
+.register {
+    text-align: center;
+}
+
+.register h1 {
+    margin: 30px 0 15px 0;
+}
+
+.register p {
+    color: #aaa;
+}

@@ -1,0 +1,38 @@
+.post_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post_container h1 {
+    margin: 30px 0 15px 0;
+}
+
+.post_container img {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.author span {
+    font-style: italic;
+    color: #aaa;
+}
+
+.post_container p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post_container .tags {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+}
+
+.tags span {
+    font-weight: bold;
+}

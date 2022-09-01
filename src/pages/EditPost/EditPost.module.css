@@ -1,0 +1,17 @@
+.edit {
+    text-align: center;
+}
+
+.edit h2 {
+    margin: 30px 0 15px 0;
+}
+
+.edit p {
+    color: #aaa;
+}
+
+.preview {
+    width: 300px;
+    height: auto;
+    margin: 15px;
+}
