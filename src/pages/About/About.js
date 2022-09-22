@@ -13,7 +13,7 @@ const About = () => {
           <p>
             <a href="https://www.linkedin.com/in/monique-costa/" target="_blank">LinkedIn</a> | 
             <a href="https://github.com/monique-costa" target="_blank">GitHub</a> | 
-            Portfólio 
+            <a href="https://monique-costa.github.io/portfolio/" target="_blank">Portfólio</a> 
           </p>
         </div>
 
